@@ -1,1 +1,1 @@
-console.log('SETTING UP JEST');
+import 'jest-preset-angular';
