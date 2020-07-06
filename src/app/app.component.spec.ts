@@ -9,7 +9,7 @@ describe('AppComponent', () => {
   });
 
   it('displays an image', async () => {
-    const {find} = await shallow.render();
+    const {find} = await shallow.render({bind: {thingy: 'My thingy'}});
     expect(find('img')).toHaveFound(1);
   });
 });
